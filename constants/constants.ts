@@ -14,6 +14,11 @@ interface Projects {
   frameworks: { id: number; name: string }[];
 }
 
+interface Socials {
+  name: string;
+  href: string;
+}
+
 export const servicesData: ServicesData[] = [
   {
     title: "FullStack Development",
@@ -186,11 +191,6 @@ export const projects: Projects[] = [
     ],
   },
 ];
-
-interface Socials {
-  name: string;
-  href: string;
-}
 
 export const socials: Socials[] = [
   { name: "Instagram", href: "https://www.instagram.com/" },
