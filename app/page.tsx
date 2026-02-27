@@ -1,4 +1,6 @@
 import About from "@/components/sections/About";
+import Contact from "@/components/sections/Contact";
+import ContactSummary from "@/components/sections/ContactSummary";
 import Hero from "@/components/sections/Hero";
 import Navbar from "@/components/sections/Navbar";
 import Services from "@/components/sections/Services";
@@ -15,9 +17,8 @@ export default function Home() {
       <Services />
       <About />
       <Works />
-      <section className="min-h-screen"></section>
-      <section className="min-h-screen"></section>
-      <section className="min-h-screen"></section>
+      <ContactSummary />
+      <Contact />
     </ReactLenis>
   );
 }
