@@ -15,7 +15,7 @@ export default function Home() {
   const isReady = progress === 100;
   console.log(progress);
   return (
-    <ReactLenis root className="ralative w-screen min-h-screen overflow-x-auto">
+    <ReactLenis root className="relative w-full min-h-screen">
       {!isReady && (
         <div className="fixed inset-0 z-999 flex flex-col items-center justify-center bg-black text-white transition-opacity duration-700 font-light">
           <p className="mb-4 text-xl tracking-widest animate-pulse">

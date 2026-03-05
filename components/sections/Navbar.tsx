@@ -155,9 +155,12 @@ function Navbar() {
         >
           <div className="font-light">
             <p className="tracking-wider text-white/50">E-mail</p>
-            <p className="text-xl tracking-widest lowercase text-pretty">
+            <a
+              href="mailto:mohamedelmahalawy555@gmail.com"
+              className="text-xl tracking-widest lowercase text-pretty"
+            >
               mohamedelmahalawy555@gmail.com
-            </p>
+            </a>
           </div>
           <div className="font-light">
             <p className="tracking-wider text-white/50">Social Media</p>
@@ -166,6 +169,7 @@ function Navbar() {
                 <a
                   key={index}
                   href={social.href}
+                  target="_blank"
                   className="text-sm leading-loose tracking-widest uppercase hover:text-white transition-colors duration-300"
                 >
                   {"{ "}

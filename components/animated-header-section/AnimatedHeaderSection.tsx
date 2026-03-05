@@ -10,6 +10,8 @@ interface AnimatedHeaderSectionProps {
   text: string;
   textColor: string;
   withScrollTrigger?: boolean;
+  leading?: string;
+  size?: string;
 }
 function AnimatedHeaderSection({
   subTitle,
@@ -17,6 +19,8 @@ function AnimatedHeaderSection({
   text,
   textColor,
   withScrollTrigger = false,
+  leading = "leading-28",
+  size = "",
 }: AnimatedHeaderSectionProps) {
   const contextRef = useRef<HTMLDivElement>(null);
   const headerRef = useRef<HTMLDivElement>(null);
@@ -63,7 +67,7 @@ function AnimatedHeaderSection({
           </p>
           <div className="px-10">
             <h1
-              className={`flex flex-col flex-wrap gap-12 ${textColor} uppercase banner-text-responsive sm:gap-16 md:block leading-24`}
+              className={`flex flex-col flex-wrap gap-12 ${textColor} uppercase banner-text-responsive sm:gap-16 md:block ${leading} ${size} -mb-4`}
             >
               {title}
             </h1>

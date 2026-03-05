@@ -11,12 +11,13 @@ function About() {
   const text = `I empower brands and startups to dominate their market 
                   with high-impact, premium web and app solutions 
                   that drive real growth.`;
-  const aboutText = `apps — from pixel-perfect React UIs to bulletproof serverless backends. Every line of code is a promise: quality users can feel.
-When I’m not shipping:
-• 🚀 Open-sourcing my latest experiment (or hacking on yours)
-• 🎥 Teaching devs on Twitch/YouTube — because rising tides lift all ships
-• 🧗‍♂️ Rock climbing (problem-solving with real stakes)
-• 🎸 Strumming chords while CI pipelines pass (multitasking at its finest)`;
+  const aboutText = `web apps — from interactive React frontends to scalable Next.js backends. Every line of code is crafted for performance and smooth user experience.
+
+When I’m not coding:
+• 🚀 Teaching JavaScript and React at ITI — sharing knowledge with the next generation of developers
+• 🎥 Building frontend projects and experimenting with modern tools like Tailwind CSS, Shadcn/UI, and GSAP
+• 💡 Exploring new technologies and keeping up with the latest in web development
+• 🖌️ Creating motion graphics and animations with After Effects, Photoshop, and Illustrator`;
 
   useGSAP(() => {
     gsap.to("#about", {
@@ -58,7 +59,7 @@ When I’m not shipping:
           alt="man"
           width={400}
           height={400}
-          className="w-md rounded-3xl"
+          className="w-md rounded-3xl "
         />
         <AnimatedTextLines text={aboutText} className={"w-full"} />
       </div>

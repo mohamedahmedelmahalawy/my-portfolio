@@ -11,16 +11,8 @@ function Hero() {
   const isMobile = useMediaQuery({ maxWidth: 853 });
 
   return (
-    <section id="home" className="flex flex-col justify-end min-h-screen ">
-      <AnimatedHeaderSection
-        subTitle="404 No Bugs Found"
-        title="Mohamed Elmahalawy"
-        text={`I empower brands and startups to dominate their market 
-                  with high-impact, premium web and app solutions 
-                  that drive real growth.`}
-        textColor="text-black"
-      />
-      <figure className="absolute inset-0 -z-50 w-screen h-screen">
+    <section className="relative overflow-hidden">
+      <figure className="absolute inset-0 -z-50 h-screen">
         <Canvas
           shadows
           camera={{ position: [0, 0, -10], fov: 17.5, near: 1, far: 20 }}
@@ -35,19 +27,19 @@ function Hero() {
             <group rotation={[-Math.PI / 3, 4, 1]}>
               <Lightformer
                 form={"circle"}
-                intensity={2}
+                intensity={1.5}
                 position={[0, 5, -9]}
                 scale={10}
               />
               <Lightformer
                 form={"circle"}
-                intensity={2}
+                intensity={1.3}
                 position={[0, 3, 1]}
                 scale={10}
               />
               <Lightformer
                 form={"circle"}
-                intensity={2}
+                intensity={1}
                 position={[-5, -1, -1]}
                 scale={10}
               />
@@ -61,6 +53,20 @@ function Hero() {
           </Environment>
         </Canvas>
       </figure>
+      <section
+        id="home"
+        className="relative flex flex-col justify-end min-h-screen "
+      >
+        <AnimatedHeaderSection
+          subTitle="404 No Bugs Found"
+          title="Mohamed Elmahalawy"
+          text={`I empower brands and startups to dominate their market 
+                    with high-impact, premium web and app solutions 
+                    that drive real growth.`}
+          textColor="text-black"
+          leading="leading-16 sm:leading-28"
+        />
+      </section>
     </section>
   );
 }

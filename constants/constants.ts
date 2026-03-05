@@ -21,78 +21,87 @@ interface Socials {
 
 export const servicesData: ServicesData[] = [
   {
-    title: "FullStack Development",
+    title: "Frontend Development",
     description:
-      "Your business deserves a fast, secure, and future-proof digital foundation. I develop custom web apps with clean architecture, optimized databases, and seamless integrations—ensuring reliability at every layer.",
+      "I build interactive, responsive, and scalable web apps using modern frameworks. I focus on clean architecture, reusable components, and smooth user experiences.",
     items: [
       {
-        title: "Backend Engineering",
-        description: "(REST/GraphQL APIs, Microservices, Auth Systems)",
+        title: "React & Next.js",
+        description:
+          "(React, Next.js 15/16, React Router, Shadcn/UI, Radix UI, Lucide)",
       },
       {
-        title: "Frontend Excellence",
-        description: "(React, Vue, TypeScript, Interactive UI/UX)",
+        title: "TypeScript & UI/UX",
+        description:
+          "(TypeScript, Tailwind CSS, Form-Hook, Zod, Figma, Responsive Design)",
       },
       {
-        title: "Database Design",
-        description: "(SQL/NoSQL Optimization, Scalable Structures)",
+        title: "Project Architecture",
+        description:
+          "(Component-based, Modular, Feature-based, Scalable Structures)",
       },
     ],
   },
   {
-    title: "DevOps & Cloud Solutions",
+    title: "Backend & Databases",
     description:
-      "Deploying software shouldn't be a gamble. I automate infrastructure, enforce security, and leverage cloud platforms (AWS/Azure) to keep your app running smoothly—24/7, at any scale.",
+      "I integrate frontends with databases and backend services efficiently, ensuring data flows securely and smoothly.",
     items: [
       {
-        title: "CI/CD Pipelines",
-        description: "(GitHub Actions, Docker, Kubernetes)",
+        title: "APIs & Integration",
+        description: "(REST APIs, Fetch, Axios, Authentication Flows)",
       },
       {
-        title: "Server Management ",
-        description: "(Linux, Nginx, Load Balancing)",
+        title: "Databases",
+        description:
+          "(MongoDB, Mongoose, CRUD Operations, Scalable Data Structures)",
       },
       {
-        title: "Performance Tuning",
-        description: "(Caching, Compression, Lighthouse 90+ Scores)",
+        title: "Performance & Optimization",
+        description:
+          "(Optimized Queries, Caching, Minimizing Re-renders in React)",
       },
     ],
   },
   {
-    title: "Security & Optimization",
+    title: "Version Control & Collaboration",
     description:
-      "Slow or hacked apps destroy trust. I harden security (XSS/SQLI protection, OAuth) and optimize bottlenecks so your app stays fast, safe, and scalable as you grow.",
+      "I maintain clean codebases and collaborate effectively using modern version control practices and team workflows.",
     items: [
       {
-        title: "Code Audits",
-        description: "(Refactoring, Tech Debt Cleanup)",
+        title: "Git & GitHub",
+        description: "(Branching, Pull Requests, Code Reviews, Collaboration)",
       },
       {
-        title: "Pen Testing",
-        description: "(Vulnerability Assessments)",
+        title: "Teamwork & Communication",
+        description:
+          "(Agile Practices, Problem Solving, Attention to Detail, Adaptability)",
       },
       {
-        title: "SEO Tech Stack",
-        description: "(SSR, Metadata, Structured Data)",
+        title: "Project Delivery",
+        description:
+          "(Deployment via Vercel, Testing, Ensuring Cross-Browser Compatibility)",
       },
     ],
   },
   {
-    title: "Web & Mobile Apps",
+    title: "UI/UX & Animations",
     description:
-      "A clunky interface can sink even the best ideas. I craft responsive, pixel perfect web and mobile apps (React Native/Flutter) that users love—bridging design and functionality seamlessly.",
+      "I enhance the visual experience using motion graphics and intuitive interfaces to keep users engaged.",
     items: [
       {
-        title: "Cross-Platform Apps",
-        description: "(Single codebase for iOS/Android/Web)",
+        title: "Motion Graphics",
+        description: "(After Effects, GSAP, Photoshop, Illustrator)",
       },
       {
-        title: "PWAs",
-        description: "(Offline mode, Push Notifications)",
+        title: "Responsive & Interactive UI",
+        description:
+          "(Figma Prototyping, Tailwind, Shadcn/UI, React Animations)",
       },
       {
-        title: "E-Commerce",
-        description: "(Checkout flows, Payment Gateways, Inventory APIs)",
+        title: "Edge Cases Handling",
+        description:
+          "(Empty States, Form Validations, Error Handling, Accessibility)",
       },
     ],
   },
@@ -101,106 +110,75 @@ export const servicesData: ServicesData[] = [
 export const projects: Projects[] = [
   {
     id: 1,
-    name: "Mobile Accessories E-commerce",
+    name: "MedReminder",
     description:
-      "An online store specializing in phone accessories including cases, chargers, cables, and power banks with MagSafe compatibility.",
+      "A Next.js app for scheduling and tracking medication reminders with Redux Toolkit state management.",
     href: "",
-    image: "/assets/projects/mobile-accessories-store.jpg",
-    bgImage: "/assets/backgrounds/blanket.jpg",
+    image: "/assets/projects/medreminder.png",
+    bgImage: "/assets/backgrounds/curtains.jpg",
     frameworks: [
-      { id: 1, name: "React" },
-      { id: 2, name: "Next.js" },
-      { id: 3, name: "Node.js" },
-      { id: 4, name: "MongoDB" },
+      { id: 1, name: "Next.js 15" },
+      { id: 2, name: "React" },
+      { id: 3, name: "TypeScript" },
+      { id: 4, name: "Redux Toolkit" },
       { id: 5, name: "Tailwind CSS" },
+      { id: 6, name: "Shadcn/UI" },
+      { id: 7, name: "Radix UI" },
+      { id: 8, name: "Lucide" },
     ],
   },
   {
     id: 2,
-    name: "Plant Shop E-commerce",
+    name: "Crypto Dasher",
     description:
-      "An online store specializing in rare and decorative plants with a clean, user-friendly interface.",
+      "A web app for tracking cryptocurrency data in real-time with interactive dashboards and responsive UI.",
     href: "",
-    image: "/assets/projects/plant-shop.jpg",
-    bgImage: "/assets/backgrounds/curtains.jpg",
+    image: "/assets/projects/crypto-dashr.png",
+    bgImage: "/assets/backgrounds/blanket.jpg",
     frameworks: [
       { id: 1, name: "React" },
-      { id: 2, name: "Next.js" },
-      { id: 3, name: "Stripe API" },
+      { id: 2, name: "TypeScript" },
+      { id: 3, name: "React Router" },
       { id: 4, name: "Tailwind CSS" },
     ],
   },
   {
     id: 3,
-    name: "Apple Tech Marketplace",
+    name: "Contact Form App",
     description:
-      "An e-commerce platform for Apple products and accessories with deals and category filtering.",
+      "A fullstack Next.js 16 app with MongoDB backend for storing form submissions, featuring responsive design and reusable UI components.",
     href: "",
-    image: "/assets/projects/apple-tech-store.jpg",
+    image: "/assets/projects/contact-form.png",
     bgImage: "/assets/backgrounds/map.jpg",
     frameworks: [
-      { id: 1, name: "Blazor" },
-      { id: 2, name: "ASP.NET Core" },
-      { id: 3, name: "SQL Server" },
-      { id: 4, name: "Bootstrap" },
-    ],
-  },
-  {
-    id: 4,
-    name: "Electronics & Gadgets Store",
-    description:
-      "A multi-category online shop featuring electronics, home appliances, and gaming gear with special offers.",
-    href: "",
-    image: "/assets/projects/electronics-store.jpg",
-    bgImage: "/assets/backgrounds/poster.jpg",
-    frameworks: [
-      { id: 1, name: "Vue.js" },
-      { id: 2, name: "Laravel" },
-      { id: 3, name: "MySQL" },
-      { id: 4, name: "SCSS" },
-    ],
-  },
-  {
-    id: 5,
-    name: "Home Decor Marketplace",
-    description:
-      "A curated collection of designer home decor items, including furniture and artisan vases.",
-    href: "",
-    image: "/assets/projects/home-decor-store.jpg",
-    bgImage: "/assets/backgrounds/table.jpg",
-    frameworks: [
-      { id: 1, name: "Angular" },
-      { id: 2, name: "Firebase" },
-      { id: 3, name: "GraphQL" },
-      { id: 4, name: "Material UI" },
-    ],
-  },
-  {
-    id: 6,
-    name: "Digital Game Store",
-    description:
-      "A gaming platform featuring discounted titles, top sellers, and genre-based browsing.",
-    href: "",
-    image: "/assets/projects/game-store.jpg",
-    bgImage: "/assets/backgrounds/curtains.jpg",
-    frameworks: [
-      { id: 1, name: "Svelte" },
-      { id: 2, name: "Node.js" },
+      { id: 1, name: "Next.js 16" },
+      { id: 2, name: "TypeScript" },
       { id: 3, name: "MongoDB" },
-      { id: 4, name: "Chakra UI" },
+      { id: 4, name: "Mongoose" },
+      { id: 5, name: "Tailwind CSS" },
+      { id: 6, name: "Shadcn/UI" },
+      { id: 7, name: "Radix UI" },
+      { id: 8, name: "Lucide" },
     ],
   },
 ];
 
 export const socials: Socials[] = [
-  { name: "Instagram", href: "https://www.instagram.com/" },
-  {
-    name: "Youtube",
-    href: "https://www.youtube.com/",
-  },
+  // { name: "Instagram", href: "https://www.instagram.com/" },
+  // {
+  //   name: "Youtube",
+  //   href: "https://www.youtube.com/",
+  // },
   {
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/mohamedahmedelmahalawy/",
   },
-  { name: "GitHub", href: "https://github.com/mohamedahmedelmahalawy" },
+  {
+    name: "GitHub",
+    href: "https://github.com/mohamedahmedelmahalawy?tab=repositories",
+  },
+  {
+    name: "CV",
+    href: "https://drive.google.com/file/d/1dRwnCaLCeVf1ZDZciAbxHht6x8_w8MhC/view?usp=sharing",
+  },
 ];
